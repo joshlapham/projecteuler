@@ -1,3 +1,5 @@
+var result = 0;
+
 var fib = function (n) {
     var secondLast = 0;
     var last = 1;
@@ -8,18 +10,18 @@ var fib = function (n) {
         last = c;
         if (isEven(c)) {
             console.log("Is even: " +c);
-        } else {
-        console.log("Else: " +c);
+            console.log("Sum: " +result);
         }
     }
 };
 
 var isEven = function (n) {
     if ((n % 2)=== 0) {
+        result += n;
         return true;
     } else {
         return false;
     }
 };
 
-fib(10);
+fib(4000000);
