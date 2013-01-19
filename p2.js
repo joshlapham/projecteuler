@@ -1,3 +1,5 @@
+// projecteuler.net Problem 2 - Evem Fibonacci numbers
+
 var result = 0;
 
 var fib = function (n) {
